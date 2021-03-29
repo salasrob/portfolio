@@ -3,6 +3,22 @@ h1{
     color: #64ffda;
     margin-top:20px ;
 }
+.skills-list{
+display: grid;
+grid-template-columns: repeat(2, minmax(140px, 200px));
+list-style: none;
+margin: 20px 0px 0px;
+padding: 0px;
+}
+li::before{
+    content: "▹";
+    color:#64ffda;
+}
+li{
+    margin-top: 10px;
+   text-align: left;
+}
+
 h2{
     color:#ccd6f6;
     text-align-last: center;
@@ -12,20 +28,17 @@ section{
     justify-content: center;
 }
 
-
-
 div {
     text-align: center;
     color: #8892b0;
 }
-
 .title-text h2{
     color: #64ffda;
     font-weight: 300;
     text-align: left;
 }
 .title-text h2{
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(40px, 8vw, 55px);
     text-align: left;
     line-height: 0.9;
     margin-top: 10px;
@@ -47,14 +60,11 @@ div {
     text-decoration: none;
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
     border-radius: 4px;
-margin-top: 10px;
+   float: left;
 }
 
 .mail-btn:hover{
     background-color:#24f1c193;
-}
-.mail-btn-wrapper{
-    margin-top: 50px;
 }
 .title-text div h2{
     color: #ccd6f6;
