@@ -1,0 +1,29 @@
+<div class="toolbar-wrapper">
+  <mat-toolbar>
+    <div class="nav-btn">
+      <button mat-raised-button routerLink="/">Home</button>
+    </div>
+    <div class="nav-btn">
+      <button mat-raised-button routerLink="/about">About</button>
+    </div>
+    <div class="nav-btn">
+      <button mat-raised-button routerLink="/projects">Projects</button>
+    </div>
+    <div class="nav-btn">
+      <button mat-raised-button routerLink="/contact">Contact</button>
+    </div>
+    <h2>
+      <a href="https://github.com/salasrob">
+        <img src="../../../assets/GitHub-Mark-32px.png" />
+      </a>
+      <a href="https://www.linkedin.com/in/robertsalas/">
+        <img src="../../../assets/linkedin.png"
+      /></a>
+      <a (click)="downloadPDF()"
+        ><img src="../../../assets/resumeicon.png"
+      /></a>
+    </h2>
+  </mat-toolbar>
+</div>
+
+<router-outlet></router-outlet>
