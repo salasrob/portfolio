@@ -5,10 +5,15 @@
     place-content: center;
   }
   h2 a{
-    margin-left:10px
+    margin-left:12px
   }
 
   .resume{
 border: none;
 background: none;
+margin-left:12px
   }
+
+.resume:hover{
+  box-shadow: 0 0 6px rgba(33,33,33,.4); 
+}
