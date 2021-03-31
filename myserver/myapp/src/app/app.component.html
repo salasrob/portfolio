@@ -19,11 +19,10 @@
       <a href="https://www.linkedin.com/in/robertsalas/">
         <img src="../../../assets/linkedin.png"
       /></a>
-      <a (click)="downloadPDF()"
-        ><img src="../../../assets/resumeicon.png"
-      /></a>
+      <button (click)="get()" class="resume">
+        <img src="../../../assets/resumeicon.png" />
+      </button>
     </h2>
   </mat-toolbar>
 </div>
-
 <router-outlet></router-outlet>

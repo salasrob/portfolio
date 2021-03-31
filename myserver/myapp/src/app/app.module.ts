@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule } from '@angular/common/http'
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +28,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     AboutComponent,
     ContactComponent,
     ProjectsComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     MatToolbarModule,
     MatIconModule,
     MatFormFieldModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
