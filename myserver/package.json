@@ -4,14 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ng": "ng",
     "start": "node server.js",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
     "devStart": "nodemon server.js",
-    "heroku-postbuild": "npm build --prod && npm start && cd myapp && ng build --prod && npm start"
+    "heroku-postbuild": "cd myapp && npm install"
   },
 
   "author": "",
