@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors');
 const path = require('path');
 const PORT = process.env.PORT || 5000;
-var app_path = 'myapp/dist/myapp';
+var app_path = './myapp/dist/myapp';
 
 app.use('/', express.static(path.join(__dirname, app_path)))
 
