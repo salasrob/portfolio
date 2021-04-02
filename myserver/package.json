@@ -11,12 +11,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "devStart": "nodemon server.js",
-    "heroku-postbuild": "cd myapp && npm install && ng build --prod"
+    "heroku-postbuild": "npm build --prod && npm start && cd myapp && ng build --prod && npm start"
   },
-  "engines": {
-    "node": "12.18.2",
-    "npm": "6.14.5"
-  },
+
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -26,4 +23,5 @@
   "devDependencies": {
     "nodemon": "^2.0.7"
   }
+
 }
