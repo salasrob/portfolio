@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
-import {saveAs} from 'file-saver';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +19,6 @@ constructor(private http:HttpClient) {}
       console.log(data);
       const url = window.URL.createObjectURL(data);
       window.open(url);
-      saveAs(data, "Rob_Salas_Resume");
     }
  )   
 
