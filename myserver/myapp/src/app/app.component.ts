@@ -7,7 +7,7 @@ import {HttpClient} from '@angular/common/http'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'myapp';
+  title = 'Robert Salas | Software Developer | Portfolio';
 
   private ROOT_URL = "http://localhost:4000/resume";
 
