@@ -8,7 +8,7 @@ var app_path = 'myapp/dist/myapp';
 
 app.use('/', express.static(path.join(__dirname, app_path)))
 
-app.listen(PORT, () => { console.log('Server Started') })
+app.listen(PORT, () => { console.log(`Server Started ${PORT}`) })
 
 app.use(express.json());
 app.use(cors())

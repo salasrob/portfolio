@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "devStart": "nodemon server.js",
-    "heroku-postbuild": "cd myapp && npm install"
+    "devStart": "nodemon server.js"
   },
 
   "author": "",
