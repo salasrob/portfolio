@@ -4,8 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "ng": "ng",
+    "start": "node server.js",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
     "devStart": "nodemon server.js",
-    "heroku-postbuild": "cd myapp && npm install && npm run build"
+    "heroku-postbuild": "cd myapp && npm install && ng build --prod"
+  },
+  "engines": {
+    "node": "12.18.2",
+    "npm": "6.14.5"
   },
   "author": "",
   "license": "ISC",
